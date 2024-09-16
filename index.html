@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <title>UCT Cars</title>
+  </head>
+  <body>
+    <section class="container-header-and-home">
+      <header id="header">
+        <a href="/"><img id="logo" src="/assets/logo.png" alt="" /></a>
+        <nav id="nav">
+          <button
+            id="btn-mobile"
+            aria-label="Abrir menu"
+            aria-haspopup="true"
+            aria-expanded="menu"
+            aria-expanded="false"
+          >
+            <span id="hamburguer"></span>
+          </button>
+          <ul id="menu" role="menu">
+            <li><a href="#">Sobre mim</a></li>
+            <li><a href="#">Projetos</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+      <span class="line"></span>
+      <h1>Serviço premium para seu carro!</h1>
+      <div class="bts-home">
+        <button id="btn-orçamento-home">
+          <a href="#"
+            >Peça um orçamento <img src="assets/arrow-right.png" alt="" />
+          </a>
+        </button>
+        <button id="btn-faleconosco-home">
+          <a href="#">
+            <img src="assets/message-chat.png" alt="" />Fale conosco
+          </a>
+        </button>
+      </div>
+    </section>
+    <section id="container-servicos-all">
+      <div class="container swiper">
+        <div class="card-wrapper">
+          <ul class="card-list swiper-wrapper">
+            <li class="card-item swiper-slide">
+              <div class="container-title-promo">
+                <h3 class="title-card">Envelopamento</h3>
+                <div class="container-promo">
+                  <h4>Promoção</h4>
+                </div>
+              </div>
+              <img
+                class="car-image"
+                src="assets/car-envelopamento.png"
+                alt=""
+              />
+              <p class="preco">A partir de R$ 2.800</p>
+            </li>
+            <li class="card-item swiper-slide">
+              <div class="container-title-promo">
+                <h3 class="title-card">Mecânico</h3>
+              </div>
+              <img class="car-image" src="assets/car-mecanico.png" alt="" />
+              <p class="preco">A partir de R$ 900</p>
+            </li>
+            <li class="card-item swiper-slide">
+              <div class="container-title-promo">
+                <h3 class="title-card">Pintura</h3>
+                <div class="container-promo">
+                  <h4>Promoção</h4>
+                </div>
+              </div>
+              <img class="car-image" src="assets/car-pintura.png" alt="" />
+              <p class="preco">A partir de R$ 3.400</p>
+            </li>
+            <li class="card-item swiper-slide">
+              <div class="container-title-promo">
+                <h3 class="title-card">Ajuste de escapamento</h3>
+                <div class="container-promo">
+                  <h4>Promoção</h4>
+                </div>
+              </div>
+              <img class="car-image" src="assets/escapamento.png" alt="" />
+              <p class="preco">A partir de R$ 1.700</p>
+            </li>
+            <li class="card-item swiper-slide" id="container-reparos">
+              <div class="container-title-promo">
+                <h3 class="title-card">Reparos</h3>
+                <div class="container-promo" id="reparos">
+                  <h4>Promoção</h4>
+                </div>
+              </div>
+              <img class="car-image" src="assets/car-reparos.png" alt="" />
+              <p class="preco">A partir de R$ 800</p>
+            </li>
+            <li class="card-item swiper-slide">
+              <div class="container-title-promo">
+                <h3 class="title-card">Limpeza Premium</h3>
+              </div>
+              <img class="car-image" src="assets/car-lavagem.png" alt="" />
+              <p class="preco">A partir de R$ 350</p>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="container-trabalhos-all">
+      <div class="container-work swiper" id="container-work">
+        <div class="card-wrapper">
+          <h1 id="trabalhos">Trabalhos</h1>
+          <ul class="card-list swiper-wrapper">
+            <li class="card-work swiper-slide">
+              <img src="assets/car-filme-illumar.png" alt="" />
+              <p>Reserva de carro Filme Illumar</p>
+              <button class="btn-works abrir-galeria">
+                <a href="#popup"> Mais detalhes sobre o projetos</a>
+                <i class="fa-solid fa-greater-than" style="color: #282828"></i>
+              </button>
+            </li>
+            <li class="card-work swiper-slide">
+              <img src="assets/Porsche.png" alt="" />
+              <p>Ajuste do sistema de escapamento no Porsche</p>
+              <button class="btn-works abrir-galeria">
+                Mais detalhes sobre o projetos
+                <i class="fa-solid fa-greater-than" style="color: #282828"></i>
+              </button>
+            </li>
+            <li class="card-work swiper-slide">
+              <img src="assets/Camaro.png" alt="" />
+              <p>Manutenção Chevrolet Camaro</p>
+              <button class="btn-works abrir-galeria">
+                Mais detalhes sobre o projetos
+                <i class="fa-solid fa-greater-than" style="color: #282828"></i>
+              </button>
+            </li>
+            <li class="card-work swiper-slide">
+              <img src="assets/Car-lavagem-seco.png" alt="" />
+              <p>Detalhamento de lavagem de interiores</p>
+              <button class="btn-works abrir-galeria">
+                Mais detalhes sobre o projetos
+                <i class="fa-solid fa-greater-than" style="color: #282828"></i>
+              </button>
+            </li>
+          </ul>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Link JS Menu -->
+    <script src="js/menu.js"></script>
+    <!-- Link JS Menu -->
+
+    <script
+      src="https://kit.fontawesome.com/9b18817371.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Link Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Link Swiper JS -->
+
+    <!-- Link JS Slider -->
+    <script src="js/script-slider.js"></script>
+    <!-- Link JS Slider -->
+  </body>
+</html>
