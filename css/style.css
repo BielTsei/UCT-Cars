@@ -33,6 +33,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 70px;
+  z-index: 100000;
 }
 #menu {
   display: flex;
@@ -302,7 +303,9 @@ body {
     display: none;
   }
 }
+/* ---------------- Serviços / Preços ---------------- */
 
+/* ---------------- Cards imagens serviços ---------------- */
 #container-work {
   margin-bottom: 35px;
 }
@@ -347,8 +350,16 @@ body {
 }
 
 .card-work p {
-  font-size: 16px;
+  font-size: 18px;
   color: var(--bg-color);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.card-work a {
+  color: var(--bg-color);
+  font-size: 14px;
 }
 
 .btn-works {
@@ -365,4 +376,73 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* ---------------- Cards imagens serviços ---------------- */
+
+/* ---------------- Cards imagens serviços ---------------- */
+
+.container-contatos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  background-color: var(--cinza-claro);
+  height: 140px;
+  width: 100%;
+  border-radius: 36px;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+.container-contatos img {
+  width: 20px;
+}
+
+.container-contatos p {
+  color: var(--bg-color);
+  font-size: 16px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.link-contato {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  width: 180px;
+  height: 60px;
+  border-radius: 16px;
+}
+
+.link-contato a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+@media (max-width: 1020px) {
+  .container-contatos {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .container-contatos {
+    padding: 40px 20px 40px 20px;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+  }
+
+  .card-work p {
+    font-size: 14px;
+  }
+
+  .card-work a {
+    font-size: 12px;
+  }
 }
