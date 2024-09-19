@@ -295,14 +295,6 @@ body {
   margin-top: -35px;
 }
 
-@media screen and (max-width: 768px) {
-  .card-wrapper {
-    margin: 0 10px 25px;
-  }
-  .card-wrapper .swiper-slide-button {
-    display: none;
-  }
-}
 /* ---------------- Serviços / Preços ---------------- */
 
 /* ---------------- Cards imagens serviços ---------------- */
@@ -424,41 +416,21 @@ body {
   gap: 16px;
 }
 
-@media (max-width: 1020px) {
-  .container-contatos {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 850px) {
-  .container-contatos {
-    padding: 40px 20px 40px 20px;
-    flex-direction: column;
-    height: 100%;
-    gap: 20px;
-  }
-
-  .card-work p {
-    font-size: 14px;
-  }
-
-  .card-work a {
-    font-size: 12px;
-  }
-}
-
 .container-footer {
   background-color: var(--red);
   border-radius: 32px;
   padding: 30px;
   color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-footer h1 {
   font-size: 18px;
   font-weight: 800;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .container-footer p {
@@ -474,7 +446,11 @@ body {
   padding-top: 40px;
   display: flex;
   flex-direction: column;
-  width: 240px;
+}
+
+.container-servicos-footer div {
+  width: 80%;
+  margin-right: 30px;
 }
 
 .container-servicos-footer p {
@@ -524,7 +500,7 @@ footer img {
   width: 22px;
 }
 
-footer div {
+.container-infos-footer div {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -535,4 +511,64 @@ footer div {
 #direitos {
   text-align: center;
   font-size: 10px;
+}
+
+@media (min-width: 768px) {
+  .card-wrapper {
+    margin: 0 10px 25px;
+  }
+  .card-wrapper .swiper-slide-button {
+    display: none;
+  }
+
+  .container-servicos-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container-btns-footer {
+    flex-direction: row;
+  }
+
+  .container-footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .container-footer h1 {
+    font-size: 22px;
+  }
+
+  .container-footer p {
+    font-size: 16px;
+  }
+
+  .container-infos-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 850px) {
+  .container-contatos {
+    padding: 40px 20px 40px 20px;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+  }
+
+  .card-work p {
+    font-size: 14px;
+  }
+
+  .card-work a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .container-contatos {
+    padding: 20px;
+  }
 }
