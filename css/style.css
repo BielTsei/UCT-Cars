@@ -423,7 +423,8 @@ body {
   color: var(--white);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 
 .container-footer h1 {
@@ -435,6 +436,7 @@ body {
 
 .container-footer p {
   font-size: 14px;
+  margin-bottom: 20px;
 }
 
 .container-footer img {
@@ -444,14 +446,20 @@ body {
 
 .container-servicos-footer {
   padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.feature {
   display: flex;
   flex-direction: column;
 }
 
-.container-servicos-footer div {
+/* .container-servicos-footer div {
   width: 80%;
   margin-right: 30px;
-}
+} */
 
 .container-servicos-footer p {
   margin-bottom: 60px;
@@ -463,7 +471,7 @@ body {
 
 .container-btns-footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 16px;
 }
 
@@ -513,7 +521,7 @@ footer img {
   font-size: 10px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .card-wrapper {
     margin: 0 10px 25px;
   }
@@ -521,18 +529,14 @@ footer img {
     display: none;
   }
 
-  .container-servicos-footer {
+  /* .container-servicos-footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
+  } */
 
   .container-btns-footer {
-    flex-direction: row;
-  }
-
-  .container-footer {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
 
   .container-footer h1 {
@@ -545,6 +549,7 @@ footer img {
 
   .container-infos-footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
   }
@@ -570,5 +575,29 @@ footer img {
 @media (max-width: 1020px) {
   .container-contatos {
     padding: 20px;
+  }
+
+  .container-header-and-home h1 {
+    font-size: 46px;
+    width: 540px;
+    margin-top: 180px;
+    margin-bottom: 170px;
+  }
+
+  .bts-home {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1020px) {
+  .container-header-and-home h1 {
+    font-size: 56px;
+    width: 540px;
+    margin-top: 180px;
+    margin-bottom: 170px;
+  }
+
+  .bts-home {
+    flex-direction: row;
   }
 }
