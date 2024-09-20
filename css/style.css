@@ -580,38 +580,6 @@ footer img {
   }
 }
 
-@media (max-width: 850px) {
-  .container-contatos {
-    padding: 40px 20px 40px 20px;
-    flex-direction: column;
-    height: 100%;
-    gap: 20px;
-  }
-
-  .card-work p {
-    font-size: 14px;
-  }
-
-  .card-work a {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 1020px) {
-  .container-contatos {
-    padding: 20px;
-  }
-
-  .container-header-and-home h1 {
-    margin-top: 180px;
-    margin-bottom: 170px;
-  }
-
-  .bts-home {
-    flex-direction: column;
-  }
-}
-
 @media (min-width: 1020px) {
   .container-header-and-home h1 {
     font-size: 56px;
